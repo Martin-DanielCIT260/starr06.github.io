@@ -8,7 +8,7 @@ nav button {	 /* hamburger button does not need to be shown */
 section.forecast {   /* show the 10-day forecast with the medium view and up */
 	display: block; 
 }
-
+	
 article p.town-article img {   /* responsive images */
 	width: 62.666%; float:right; 
 }
