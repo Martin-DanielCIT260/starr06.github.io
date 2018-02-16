@@ -1,0 +1,20 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+  
+article p.town-article img { 
+	width: 29.333%; 
+}
+  
+li {
+    display: inline;
+}	
+	
+main figure img { width: 100%; }	
+	
+section.forecast {   /* show the 10-day forecast with the medium view and up */
+	display: block; 
+}	
+	
+	
+	
+}
