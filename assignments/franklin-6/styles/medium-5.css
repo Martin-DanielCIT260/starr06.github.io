@@ -24,6 +24,8 @@ article p.town-article img {   /* responsive images */
 	
 li {
     display: inline;
+	font-size: 2vw;     
+	margin-left: 9px; }
 }
 
 }
