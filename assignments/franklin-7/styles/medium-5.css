@@ -1,0 +1,33 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+nav button {	 /* hamburger button does not need to be shown */
+	display:none; 
+} 
+
+nav ul.hide {
+	display:block;
+}	
+	
+section.forecast {   /* show the 10-day forecast with the medium view and up */
+	display: block; 
+	margin-bottom: 30px;
+}
+	
+section.forecast > table {
+	margin-left: auto;
+	margin-right:auto;
+}
+	
+article p.town-article img {   /* responsive images */
+	width: 62.666%; float:right; 
+}
+	
+li {
+    display: inline;
+	font-size: 2vw;     
+	margin-left: 9px; 
+}
+
+
+}
