@@ -33,19 +33,20 @@ header .subheading {
 }
 
 nav {
-    display: flex;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 }
-nav button {
-
-}
+nav button {}
 nav ul {
 	list-style: none; 
-	margin-top: 30px;
+	margin-top: 0px;
+	padding-left: 0px;
 }
 
 nav ul li {
-	text-align: left;
 	margin-top: 4px;
+	text-align: right;	
 }
 
 nav ul li a {}
