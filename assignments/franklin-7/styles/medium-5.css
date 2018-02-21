@@ -6,28 +6,34 @@ nav button {	 /* hamburger button does not need to be shown */
 } 
 
 nav ul.hide {
-	display:block;
+	display:flex;
+	margin-left: auto;
+	margin-right: auto;
 }	
-	
+		
+li {   
+	margin-left: 9px; 
+	font-size: 2.5vw;
+}	
+		
 section.forecast {   /* show the 10-day forecast with the medium view and up */
-	display: block; 
-	margin-bottom: 30px;
+	display: flex; 
+	flex-direction: column;
+	margin-bottom: 25px;
 }
 	
 section.forecast > table {
 	margin-left: auto;
 	margin-right:auto;
 }
+
+article {}	
 	
 article p.town-article img {   /* responsive images */
-	width: 62.666%; float:right; 
+
 }
 	
-li {
-    display: inline;
-	font-size: 2vw;     
-	margin-left: 9px; 
-}
+
 
 
 }

@@ -16,26 +16,38 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 	margin: auto;
 }
 
-header {}
+header {
+	display: flex;
+	flex-direction: column;	
+}
+
 header h1 {
 	color:cornflowerblue;
 	font-size: 2.5em;
+	order:1;
+	align-self: center;	
+	margin-bottom: 0px;
+	margin-top: 0px;
 }
 
 header img {
-	width: 25%;	
+	max-height: 10vw;
+	order: 0;	
+	align-self: flex-start;
 }
 
 header .subheading {
 	font-size: 1.5em;
-	text-align: center;
-	padding-bottom: .5em;
+	order: 2;
+	align-self: center;
+	margin-left: 25vw;
 }
 
 nav {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
+	padding-bottom: 0px;
 }
 nav button {}
 nav ul {
@@ -62,6 +74,7 @@ nav ul.hide{
 main {}
 main h2 {
 	color: cornflowerblue;
+	margin-top: 0px;
 }
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { width: 100%; }
