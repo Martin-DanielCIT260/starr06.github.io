@@ -27,6 +27,15 @@ section.forecast > table {
 	margin-right:auto;
 }
 
+.gallery {
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+}
+
+.gallery img {
+    max-width: 45vw;
+}    
+    
 article {}	
 	
 article p.town-article img {   /* responsive images */

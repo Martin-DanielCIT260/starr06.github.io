@@ -15,7 +15,20 @@ main figure img { width: 100%; }
 section.forecast {   /* show the 10-day forecast with the medium view and up */
  
 }	
-	
-	
+
+.gallery {
+    grid-template-columns: auto auto auto;
+    
+}
+
+.gallery img {
+    max-width: 30vw;
+}     
+
+
+    
+main img:hover {
+    box-shadow: 5px 5px 10px gray;
+}
 	
 }

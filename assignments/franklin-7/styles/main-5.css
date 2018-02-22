@@ -81,6 +81,15 @@ main figure img { width: 100%; }
 
 section {}
 
+.gallery {
+    display:grid;
+    grid-template-columns: auto;
+}
+
+.gallery img {
+    max-width: 90vw;
+}
+
 .forecast {
 	display: none;
 }
