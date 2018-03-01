@@ -158,6 +158,7 @@ footer>p {} /* This structure refers to p elements that are direct children of t
 
 form#stormForm {
     text-align: left;
+    max-width: 1024px;
 }
 
 label {
