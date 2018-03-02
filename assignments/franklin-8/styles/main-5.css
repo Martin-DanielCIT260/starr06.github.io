@@ -171,6 +171,10 @@ label span {
     display: block;
 }
 
+div {
+    display: block;
+}
+
 legend {
     font-size: 1.5em;
     margin-left: 2em;
