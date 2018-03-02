@@ -54,10 +54,12 @@
                     <option value="Thunderstorm">
                     <option value="Tornado">
                 </datalist>
-            <label><span>Storm Severity:</span><input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                <span id="ratingvalue">5</span></label>
-            
-            <label><span>Storm Region:</span>
+            <label>
+                <span>Storm Severity:</span><input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span>
+            </label>
+            <label>
+                <span>Storm Region:</span>
                 <select name="region">
                     <option value="Select Region" selected disabled>Select Region</option>
                     <option value="Franklin">Franklin</option>
@@ -65,11 +67,12 @@
                     <option value="Springfield">Springfield</option>
                 </select>
             </label>  
-            <label><span>User in Danger:</span>
+            <div id="danger">
+                <span>User in Danger:</span>
                 <input type="radio" name="danger" value="yes">Yes
                 <input type="radio" name="danger" value="maybe" checked>Maybe
                 <input type="radio" name="danger" value="yes">No
-            </label>
+            </div>
             <label><span>Comments:</span><textarea name="comments" rows="10" cols="30"></textarea></label>     
         </fieldset>
         <input type="submit" class="submitBtn">
