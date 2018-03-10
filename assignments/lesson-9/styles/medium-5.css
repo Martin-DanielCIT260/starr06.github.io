@@ -42,6 +42,22 @@ article p.town-article img {   /* responsive images */
 
 }
 	
+/* ---------------------------- json -------------------------*/
+
+
+.json {
+    display: flex;
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.json article {
+    margin-bottom: .5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
 
 
 

@@ -72,7 +72,9 @@ main h2 {
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { width: 90%; }
 
-section {}
+section {
+
+}
 
 .gallery {
     display:grid;
@@ -192,11 +194,27 @@ input.submitBtn {
 }
 
 
+/* ---------------------------- json -------------------------*/
 
 
+.json {
+    display: block;
+    text-align: center; 
+    margin: 1em .5em 0em .5em; 
+    max-width: 95%
+}
 
+.json article {
+    margin-bottom: .5em;
+    padding: 1em;
+    background-color: cornflowerblue;
+}
 
-
+.json h2 {
+    color: white;
+    font-size: 2em;
+    margin: 0em;
+}
 
 
 

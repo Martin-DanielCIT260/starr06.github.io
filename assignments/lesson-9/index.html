@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Franklin Weather</title>
+  <title>Small Town Weather</title>
   <meta name="Daniel Martin" content="Daniel Martin">
-  <meta name="Franklin Weather" content="weather for franklin">
+  <meta name="Small Town Weather" content="weather information">
   <!-- external style references in the proper cascading order -->    
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">  <!-- Google API font reference -->
   <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
@@ -33,7 +33,7 @@
 		</ul>		
 	  </nav>
 
-<section>
+<section class="json">
     <!--Display the individual town data with the motto, year founded, population, and annual rainfall-->
 </section>
 
@@ -50,49 +50,7 @@
 
 <script src="scripts/currentdate.js"></script>
 <script src="scripts/hamburger.js"></script>
-<script>
-    var section = document.querySelector('section');
-    var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-    var request = new XMLHttpRequest();
-    request.open('GET', requestURL);
-    request.responseType = 'json';
-    request.send();
-    request.onload = function() {
-            var smallTowns = request.response;
-            showTowns(smallTowns);
-        }
-
-    //Display the individual town data with the motto, year founded, population, and annual
-    //rainfall from the JSON file
-
-    function showTowns(jsonObj) {
-        var towns = jsonObj['towns'];
-
-        for (var i = 0; i < towns.length; i++) {
-            var myArticle = document.createElement('article');
-            var myH2 = document.createElement('h2');
-            var myPara1 = document.createElement('p');
-            var myPara2 = document.createElement('p');
-            var myPara3 = document.createElement('p');
-            var myPara4 = document.createElement('p');
-            var myPara5 = document.createElement('p');
-
-            myH2.textContent = towns[i].name;
-            myPara1.textContent = towns[i].motto;
-            myPara2.textContent = 'Founded: ' + towns[i].yearFounded;
-            myPara3.textContent = 'Population: ' + towns[i].currentPopulation;
-            myPara4.textContent = 'Annual Rainfall: ' + towns[i].averageRainfall;               
-
-            myArticle.appendChild(myH2);
-            myArticle.appendChild(myPara1);
-            myArticle.appendChild(myPara2);
-            myArticle.appendChild(myPara3);
-            myArticle.appendChild(myPara4);
-
-            section.appendChild(myArticle);
-          }
-        }  
-</script>    
+<script src="scripts/json.js"></script>    
 
 </body>
 </html>    
