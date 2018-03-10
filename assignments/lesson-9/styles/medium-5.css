@@ -46,7 +46,7 @@ article p.town-article img {   /* responsive images */
 
 
 .json {
-    display: block;
+    display: flex;
     text-align: center; 
     margin-left: auto;
     margin-right: auto;
