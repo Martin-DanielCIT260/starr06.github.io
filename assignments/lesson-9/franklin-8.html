@@ -43,17 +43,19 @@
 		</picture>
     </figure>
     <section id=today>
-      <h3><span id="currentWeather"></span></h3>    
-      <div class="highlow">
-        <p>Current Temperature: <span id="currentTemp"></span>&deg;F</p>
-        <p>High: <span id="high">90</span>&deg;F</p>  
-        <p>Low: <span id="low">66</span>&deg;F</p>  
-      </div>
+      <h3><span id="currentWeather"></span></h3>
       <div class="current">
         <picture>
             <img id="currentIcon" src="" alt="current weather">
         </picture>
-      </div>   
+      </div>       
+      <div class="highlow">
+        <p>Current Temperature: <span id="currentTemp"></span>&deg;F</p>
+        <div id="weatherDesc"></div>
+        <p>High: <span id="high">90</span>&deg;F</p>  
+        <p>Low: <span id="low">66</span>&deg;F</p>  
+      </div>
+        
       <div class="conditions">
         <p>Precipitation: 0&#37;</p>  
         <p>Wind Speed: <span id="wind"></span> mph</p>  
@@ -119,7 +121,7 @@
 <script src="scripts/wu-weather.js"></script>
 <script src="scripts/hamburger.js"></script> 
 <script src="scripts/currentdate.js"></script>
-<script src="scripts/windchill.js"></script>
+<script src="scripts/franklinjson.js"></script>
     
 </body>
 </html>
