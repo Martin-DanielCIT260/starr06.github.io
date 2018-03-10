@@ -26,7 +26,7 @@ var section = document.querySelector('section');
             var myPara4 = document.createElement('p');
             
             myH2.textContent = towns[i].name;
-            myPara1.textContent = towns[i].motto;
+            myPara1.textContent = 'Motto: ' + towns[i].motto;
             myPara2.textContent = 'Founded: ' + towns[i].yearFounded;
             myPara3.textContent = 'Population: ' + towns[i].currentPopulation;
             myPara4.textContent = 'Annual Rainfall: ' + towns[i].averageRainfall;
