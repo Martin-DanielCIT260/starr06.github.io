@@ -17,7 +17,7 @@
     <header>
         <img src="https://starr06.github.io/assignments/lesson-5/sun-with-clouds-clipart-free-clip-art-images.jpeg" alt="The site logo">	
         <h1>Small Town Weather</h1>
-    	<div class="subheading">You gonna eat your tots?</div>
+    	<div class="subheading" id="subheading">You gonna eat your tots?</div>
     </header>
 
   <!-- site navigation use placeholder references -->
@@ -43,19 +43,20 @@
 		</picture>
     </figure>
     <section id=today>
-      <h3>Sunny</h3>    
+      <h3><span id="currentWeather"></span></h3>    
       <div class="highlow">
+        <p>Current Temperature: <span id="currentTemp"></span>&deg;F</p>
         <p>High: <span id="high">90</span>&deg;F</p>  
         <p>Low: <span id="low">66</span>&deg;F</p>  
       </div>
       <div class="current">
         <picture>
-            <img src=https://starr06.github.io/assignments/lesson-5/sunnysquare.jpeg alt="Sunny Day">
+            <img id="currentIcon" src="" alt="current weather">
         </picture>
       </div>   
       <div class="conditions">
         <p>Precipitation: 0&#37;</p>  
-        <p>Wind Speed: <span id="wind">5</span> mph SW</p>  
+        <p>Wind Speed: <span id="wind"></span> mph</p>  
         <p>Feels like: <span id="feelsLike"></span>&deg;F</p>
       </div>           
     </section>
@@ -114,11 +115,11 @@
     </aside>
     <p class="footer-bar">&copy;2017 All Rights Reserved | Small Town Weather | <span id="currentDate"></span></p>
   </footer>
-
-
-<script src="scripts/currentdate.js"></script>
+    
+<script src="scripts/wu-weather.js"></script>
 <script src="scripts/hamburger.js"></script> 
+<script src="scripts/currentdate.js"></script>
 <script src="scripts/windchill.js"></script>
-	
+    
 </body>
 </html>

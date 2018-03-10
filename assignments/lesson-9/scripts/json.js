@@ -14,7 +14,7 @@ var section = document.querySelector('section');
 
     function showTowns(jsonObj) {
         var towns = jsonObj['towns'];
-
+                
         for (var i = 0; i < towns.length; i++) {
             if (towns[i].name != "Placerton") {
                 
