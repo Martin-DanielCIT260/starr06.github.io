@@ -1,0 +1,203 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  	font-size: 16px;
+  	/* Declare the base font-family - from google font api or other */
+  	font-family: sans-serif;
+    background-color:cornsilk;
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+	max-width: 1024px;
+	text-align: center;
+	padding: .5em;
+	margin: auto;
+}
+
+header {}
+
+header h1 {
+    color:cornflowerblue;
+	font-size: 2.5em;
+    margin-bottom: 0px;
+}
+
+header img {
+	max-height: 10vw;
+    float: left;  
+}
+
+header .subheading {
+	font-size: 1.5em;
+    text-align: right;
+    margin-right: 40px;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding-bottom: 0px;
+}
+nav button {}
+nav ul {
+	list-style: none; 
+	margin-top: 0px;
+	padding-left: 0px;
+}
+
+nav ul li {
+	margin-top: 4px;
+	text-align: right;	
+}
+
+nav ul li a {
+    
+}
+nav ul li.active a {
+    padding: 4px;
+    background-color: cornflowerblue;
+    color: white;
+}
+nav ul li a:hover { 
+	color: red;
+}
+
+nav ul.hide{
+	display: none;
+}
+
+main {}
+main h2 {
+    font-size: 2em;
+	color: cornflowerblue;
+	margin-top: 0px;
+}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { width: 90%; }
+
+section {}
+
+.gallery {
+    display:grid;
+    grid-template-columns: auto;
+}
+
+.gallery img {
+    max-width: 90vw;
+}
+
+.forecast {
+	display: none;
+}
+
+article {
+	border: 1px solid;
+}
+
+h3 {
+    color: cornflowerblue;
+    font-size: 1.5em;
+    margin: .5em .5em
+}
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: 97%; /* fill the page in the small/phone view */
+  margin: .25em;
+}
+
+table, th, td {
+    border: 2px solid lightgray;
+    border-collapse: collapse;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px; 
+    font-family: 'Ubuntu', sans-serif;
+}
+
+th {
+    background-color: #628ca6;
+    color: white;
+}
+
+footer {}
+footer aside {
+	background-color: cornflowerblue;	
+}
+
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+
+/* ---------------------------- FORM STUFF -------------------------*/
+
+form#stormForm {
+    text-align: left;
+    max-width: 1024px;
+}
+
+label {
+    display: block;
+    margin: .5em; 
+    margin-bottom: .75em;
+}
+
+label span {
+    display: block;
+}
+
+div {
+    display: block;
+}
+
+legend {
+    font-size: 1.5em;
+    margin-left: 2em;
+}
+
+input.submitBtn {
+    margin-top: .5em;
+    margin-left: 1em;
+    font-size: 2em;
+}
+
+#ratingvalue {
+    display: inline-block;
+    
+}
+
+
+/* ---------------------------- json -------------------------*/
+
+
+.json {
+    display: block;
+    text-align: center; 
+    margin: 1em .5em 0em .5em; 
+    max-width: 95%
+}
+
+.json article {
+    margin-bottom: .5em;
+    padding: 1em;
+    background-color: cornflowerblue;
+}
+
+.json h2 {
+    color: white;
+    font-size: 2em;
+    margin: 0em;
+}
+
+
+
+
+
+
+
+
+
+

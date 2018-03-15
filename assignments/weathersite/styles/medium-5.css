@@ -1,0 +1,65 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+nav button {	 /* hamburger button does not need to be shown */
+	display:none; 
+} 
+
+nav ul.hide {
+	display:flex;
+	margin-left: auto;
+	margin-right: auto;
+}	
+		
+li {   
+	margin-left: 9px; 
+	font-size: 2.5vw;
+}	
+		
+section.forecast {   /* show the 10-day forecast with the medium view and up */
+	display: flex; 
+	flex-direction: column;
+	margin-bottom: 25px;
+}
+	
+section.forecast > table {
+	margin-left: auto;
+	margin-right:auto;
+}
+
+.gallery {
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+}
+
+.gallery img {
+    max-width: 45vw;
+}    
+    
+article {}	
+	
+article p.town-article img {   /* responsive images */
+
+}
+	
+/* ---------------------------- json -------------------------*/
+
+
+.json {
+    display: flex;
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    
+.json article {
+    margin-bottom: .5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+
+
+
+}
