@@ -39,7 +39,8 @@ section.forecast > table {
 article {}	
 	
 article p.town-article img {   /* responsive images */
-
+    float: right;
+    width: 38%;
 }
 	
 /* ---------------------------- json -------------------------*/
