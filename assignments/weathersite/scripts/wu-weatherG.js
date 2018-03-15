@@ -1,6 +1,6 @@
 var weatherObject = new XMLHttpRequest();
 
-weatherObject.open('GET', 'http://api.wunderground.com/api/cb37f191fa75ceaa/conditions/q/IL/Greenville.json', true );
+weatherObject.open('GET', '//api.wunderground.com/api/cb37f191fa75ceaa/conditions/q/IL/Greenville.json', true );
 
 weatherObject.send();
 
@@ -18,7 +18,7 @@ weatherObject.onload = function () {
 
 var weatherForecast = new XMLHttpRequest();
 
-weatherForecast.open('GET', 'http://api.wunderground.com/api/cb37f191fa75ceaa/forecast/q/IL/Greenville.json', true );
+weatherForecast.open('GET', '//api.wunderground.com/api/cb37f191fa75ceaa/forecast/q/IL/Greenville.json', true );
 
 weatherForecast.send();
 
