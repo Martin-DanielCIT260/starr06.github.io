@@ -6,7 +6,7 @@ weatherObject.send();
 
 weatherObject.onload = function () {
     var weatherInfo = JSON.parse(weatherObject.responseText);
-    //console.log(weatherInfo);
+    console.log(weatherInfo);
     
     document.getElementById('currentWeather').innerHTML = weatherInfo.current_observation.weather;
     document.getElementById('currentTemp').innerHTML = weatherInfo.current_observation.temp_f;
