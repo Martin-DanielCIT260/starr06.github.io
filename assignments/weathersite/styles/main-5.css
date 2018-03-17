@@ -97,12 +97,13 @@ section {}
 article {
 	border: 1px solid;
     margin-top: 1em;
+    padding: .5em;
 }
 
 h3 {
     color: cornflowerblue;
     font-size: 1.5em;
-    margin: .5em .5em
+    margin: .5em;
 }
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
@@ -124,9 +125,13 @@ th {
     color: white;
 }
 
-footer {}
+footer {
+    max-width: 100%;
+}
+
 footer aside {
-	background-color: cornflowerblue;	
+	background-color: cornflowerblue;
+    padding: .75em;
 }
 
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
