@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mountain Spoke Contact Info</title>
+  <meta name="Mountain Spoke" content="Mountain biking contact and map">
+  <meta name="photo gallery" content="photo gallery">
+  <!-- external style references in the proper cascading order -->    
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <img src="images/mountain%20spoke%20logo.jpg" alt="The site logo">
+    </a>
+    <h1>The Mountain Spoke</h1>
+</header>
+
+<nav>
+    <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="adventure-tours.html">Adventure Tours</a></li>
+			<li><a href="events.html">Events</a></li>
+			<li><a href="sales.html">Sales</a></li>
+			<li><a href="service.html">Service</a></li>
+			<li class="active"><a href="contact.html">Contact</a></li>
+        </ul>		
+</nav>
+    
+<main>
+    <section>
+        <h2>Come Visit our Shop</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9316277611006!2d-111.09290618453913!3d45.67227287910401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1523371290286" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+    
+    <form id="stormForm" action="thanks.html">
+        <fieldset>
+            <legend>Contact Us</legend>
+            <label><span>Name: Required</span><input type="text" name="fullname" pattern="[a-zA-Z ]{5,40}" required></label>
+            <label><span>Email: Required</span><input type="email" name="email" placeholder="johndoe@abc.com" required></label>
+            <label><span>Phone Number:</span>
+                <input type ="tel" name="phone1">
+            </label>
+            <label><span>Comments:</span><textarea name="comments" rows="10" cols="30"></textarea></label>     
+        </fieldset>
+        <input type="submit" class="submitBtn" value="submit"> 
+    </form> 
+    
+    
+    
+    
+</main>
+    
+<footer>
+    <aside>
+    	The Mountain Spoke<br>
+		3950 Valley Commons Drive<br>
+		Bozeman, MT 83454<br>
+		(855)888-1212<br>
+		<a href="mailto:contact@moutainspoke.com">contact@moutainspoke.com</a>
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | The Mountain Spoke | <span id="currentDate"></span></p>
+</footer>
+
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/hamburger.js"></script>
+ 
+</body>
+</html>      
+      

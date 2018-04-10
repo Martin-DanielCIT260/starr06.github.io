@@ -1,0 +1,31 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+  
+article p.town-article img {}
+  
+li {
+    margin-right: 20px;
+	font-size: 1.25em;
+}	
+	
+main figure img { width: 100%; }	
+	
+section.forecast {   /* show the 10-day forecast with the medium view and up */
+ 
+}	
+
+.gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+
+.gallery img {
+    max-width: 30vw;
+}     
+
+.gallery img:hover {
+    box-shadow: 5px 5px 10px gray;
+}
+	
+}

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adventure Tours</title>
+  <meta name="Daniel Martin" content="Daniel Martin">
+  <meta name="adventure tours" content="the mountain spoke adventure tours">
+  <!-- external style references in the proper cascading order -->    
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <img src="images/mountain%20spoke%20logo.jpg" alt="The site logo">
+    </a>
+    <h1>The Mountain Spoke</h1>
+</header>
+
+<nav>
+    <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+			<li><a href="index.html">Home</a></li>
+			<li class="active"><a href="adventure-tours.html">Adventure Tours</a></li>
+			<li><a href="events.html">Events</a></li>
+			<li><a href="sales.html">Sales</a></li>
+			<li><a href="service.html">Service</a></li>
+			<li><a href="contact.html">Contact</a></li>
+        </ul>		
+</nav>
+  <main>
+    <h2>The City of Franklin</h2>
+    <figure>
+		<picture>
+      		<source media="(min-width: 1024px)" srcset="images/mountains_and_water_resized.jpg">
+			<source media="(min-width: 600px)" srcset="images/mountains_and_water_resized_600.jpg">
+			<img src="images/mountains_and_water_resized_default.jpg" alt="moutains with sunshine">
+		</picture>
+    </figure>
+   		  
+  
+  </main>
+    
+<footer>
+    <aside>
+    	The Mountain Spoke<br>
+		3950 Valley Commons Drive<br>
+		Bozeman, MT 83454<br>
+		(855)888-1212<br>
+		<a href="mailto:contact@moutainspoke.com">contact@moutainspoke.com</a>
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | The Mountain Spoke | <span id="currentDate"></span></p>
+</footer>
+
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/hamburger.js"></script>
+  
+    
+</body>
+</html>
