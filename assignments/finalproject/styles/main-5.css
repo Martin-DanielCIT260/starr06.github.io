@@ -28,13 +28,6 @@ header h1 {
 header img {
 	max-height: 13vw;
     float: left;
-    padding: 0px;
-}
-
-header .subheading {
-	font-size: 1.5em;
-    text-align: right;
-    margin-right: 40px;
 }
 
 nav {
@@ -96,9 +89,8 @@ section {}
 }
 
 .gallery img {
-    max-width: 90vw;
+    min-width: 90vw
 }
-
 
 article {
 	border: 1px solid;

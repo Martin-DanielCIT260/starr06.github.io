@@ -29,11 +29,11 @@ section.forecast > table {
 
 .gallery {
     grid-template-columns: auto auto;
-    grid-gap: 5px;
+    grid-gap: 2em;
 }
 
 .gallery img {
-    max-width: 45vw;
+    min-width: 45vw;
 }    
     
 article {}	
