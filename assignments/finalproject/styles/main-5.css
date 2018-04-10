@@ -93,9 +93,6 @@ section {}
     max-width: 90vw;
 }
 
-.forecast {
-	display: none;
-}
 
 article {
 	border: 1px solid;
@@ -104,7 +101,7 @@ article {
 }
 
 h3 {
-    color: cornflowerblue;
+    color: #86A60A;
     font-size: 1.5em;
     margin: .5em;
 }
@@ -128,6 +125,10 @@ th {
     color: white;
 }
 
+#googleMap {
+    text-align: left;
+}
+
 footer {
     max-width: 100%;
 }
@@ -147,8 +148,7 @@ footer>p {} /* This structure refers to p elements that are direct children of t
 
 form#stormForm {
     text-align: left;
-    max-width: 1024px;
-    
+    max-width: 1024px;  
 }
 
 label {
@@ -181,33 +181,7 @@ input.submitBtn {
     color: #333333;
 }
 
-#ratingvalue {
-    display: inline-block;
-    
-}
 
-
-/* ---------------------------- json -------------------------*/
-
-
-.json {
-    display: block;
-    text-align: center; 
-    margin: 1em .5em 0em .5em; 
-    max-width: 95%
-}
-
-.json article {
-    margin-bottom: .5em;
-    padding: 1em;
-    background-color: cornflowerblue;
-}
-
-.json h2 {
-    color: white;
-    font-size: 2em;
-    margin: 0em;
-}
 
 
 
