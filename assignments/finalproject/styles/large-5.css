@@ -10,15 +10,11 @@ li {
 	
 main figure img { width: 100%; }	
 	
-section.forecast {   /* show the 10-day forecast with the medium view and up */
- 
-}	
 
 .gallery {
     display: grid;
     grid-template-columns: auto auto auto;
-    justify-content: center;
-    
+    justify-content: center;  
 }
 
 .gallery img {

@@ -13,7 +13,6 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 	max-width: 1024px;
 	text-align: center;
-	padding: .5em;
 	margin: auto;
 }
 
@@ -83,13 +82,20 @@ section {}
     color: #86A60A;
 }
 
+#callToAction a {
+    font-size: 3em;
+    background-color: #86A60A;
+    color: blue;
+    padding: .25em;
+}
+
 .gallery {
     display:grid;
     grid-template-columns: auto;
 }
 
 .gallery img {
-    min-width: 90vw
+    min-width: 90vw;
 }
 
 article {
@@ -123,12 +129,12 @@ th {
 }
 
 footer {
-    max-width: 100%;
+    min-width: 100%;
 }
 
 footer aside {
 	background-color: #86A60A;
-    padding: .75em;
+    padding: .25em;
     color: #333333;
     font-size: 1.5em;
 }
