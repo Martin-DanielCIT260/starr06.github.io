@@ -27,7 +27,8 @@ header h1 {
 
 header img {
 	max-height: 13vw;
-    float: left;  
+    float: left;
+    padding: 0px;
 }
 
 header .subheading {
@@ -84,6 +85,11 @@ main figure img { width: 90%; }
 
 section {}
 
+#contactInfo {
+    font-size: 1.65em;
+    color: #86A60A;
+}
+
 .gallery {
     display:grid;
     grid-template-columns: auto;
@@ -104,11 +110,6 @@ h3 {
     color: #86A60A;
     font-size: 1.5em;
     margin: .5em;
-}
-
-article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  width: 97%; /* fill the page in the small/phone view */
-  margin: .25em;
 }
 
 table, th, td {
@@ -146,9 +147,9 @@ footer>p {} /* This structure refers to p elements that are direct children of t
 
 /* ---------------------------- FORM STUFF -------------------------*/
 
-form#stormForm {
+#contactUs {
     text-align: left;
-    max-width: 1024px;  
+    border-style: hidden;
 }
 
 label {
@@ -161,11 +162,6 @@ label span {
     display: block;
     color: #86A60A;
 }
-
-div {
-    display: block;
-}
-
 legend {
     font-size: 1.5em;
     margin-left: 2em;
@@ -179,6 +175,7 @@ input.submitBtn {
     font-size: 2em;
     background-color: #86A60A;
     color: #333333;
+    border-width:thick;
 }
 
 
